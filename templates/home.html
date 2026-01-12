@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Yangiliklar</title>
+</head>
+<body>
+
+<h1> KUN YANGILIKLARI </h1>
+
+<ul>
+    {% for post in object_list %}
+        <br>
+            <h2>{{ post.title }} </h2>
+            <br> {{ post.text }}
+        </li>
+    {% endfor %}
+</ul>
+
+</body>
+</html>
